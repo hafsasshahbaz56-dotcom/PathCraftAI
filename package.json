@@ -1,0 +1,16 @@
+{
+  "name": "ai-career-growth-platform",
+  "version": "1.0.0",
+  "description": "V1 AI-Powered Career, Skills & Personal Branding SaaS MVP",
+  "scripts": {
+    "dev:server": "node server/server.js",
+    "dev:client": "npm --prefix client run dev",
+    "dev": "node scripts/dev.js",
+    "start": "node server/server.js",
+    "build:client": "npm --prefix client run build",
+    "test:api": "node scripts/test_api.js"
+  },
+  "keywords": ["ai", "career", "saas", "gemini", "skills", "branding"],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,711 @@
+{
+  "users": [
+    {
+      "id": "user_1789998793219_l0q9nh",
+      "_id": "user_1789998793219_l0q9nh",
+      "name": "Alex Mercer",
+      "email": "test_1789998792856@example.com",
+      "password_hash": "$2a$10$lNGQLazrFuN3yE.X9.Omke.M5O3bJzvLzSeHv4.nErHdQykewRTsS",
+      "subscription_status": "free",
+      "created_at": "2026-09-21T13:53:13.218Z",
+      "updated_at": "2026-09-21T13:53:13.218Z"
+    },
+    {
+      "id": "user_1789999041853_r9rkus",
+      "_id": "user_1789999041853_r9rkus",
+      "name": "Alex Mercer",
+      "email": "test_1789999041690@example.com",
+      "password_hash": "$2a$10$B1TIkD2Q0pPgJFAoRMjYQOJlRyZ8VlTKytgrOQY2vbPkWVQmqTLoW",
+      "subscription_status": "free",
+      "created_at": "2026-09-21T13:57:21.853Z",
+      "updated_at": "2026-09-21T13:57:21.853Z"
+    },
+    {
+      "id": "user_1789999142533_ygx6qv",
+      "_id": "user_1789999142533_ygx6qv",
+      "name": "Alex Mercer",
+      "email": "test_1789999142355@example.com",
+      "password_hash": "$2a$10$9IsIvx4tBI9sJz.rigPDEOHS.fQTzGuqUx6Yv82vdUgziDP6susEu",
+      "subscription_status": "pro",
+      "created_at": "2026-09-21T13:59:02.532Z",
+      "updated_at": "2026-09-21T13:59:46.630Z"
+    },
+    {
+      "id": "user_1790000840457_l62nol",
+      "_id": "user_1790000840457_l62nol",
+      "name": "Hafsa Shahbaz",
+      "email": "hafsasshahbaz56@gmail.com",
+      "password_hash": "$2a$10$wAo2A2N0IuX1bT0yeVVzsuYDOY1glrhevln5G7ZwmffNAFgIhux12",
+      "subscription_status": "pro",
+      "created_at": "2026-09-21T14:27:20.457Z",
+      "updated_at": "2026-09-21T14:36:12.543Z"
+    },
+    {
+      "id": "user_1790001535500_abtgec",
+      "_id": "user_1790001535500_abtgec",
+      "name": "Hafsa Shahbaz",
+      "email": "hafsashahbaz56@gmail.com",
+      "password_hash": "$2a$10$gokzAvO2Ca4gs4ykIneeS.qPB7Vb1qkiTSAkj13qSq1W/W63LKHbu",
+      "subscription_status": "pro",
+      "created_at": "2026-09-21T14:38:55.498Z",
+      "updated_at": "2026-09-21T14:42:39.966Z"
+    }
+  ],
+  "profiles": [
+    {
+      "career_stage": "Early Career (1-3 years)",
+      "career_goals": "Transition into an AI-forward career and land a high-impact engineering role",
+      "user_id": "user_1789998793219_l0q9nh",
+      "updated_at": "2026-09-21T13:53:13.271Z",
+      "created_at": "2026-09-21T13:53:13.220Z",
+      "education": "Bachelor’s Degree",
+      "experience": "Built frontend web applications and small dashboard utilities. Familiar with APIs.",
+      "skills": [
+        "JavaScript",
+        "React",
+        "Basic Python",
+        "CSS",
+        "Git"
+      ],
+      "interests": [
+        "Generative AI",
+        "Cloud Infrastructure",
+        "Developer Tools",
+        "Full-Stack Architecture"
+      ],
+      "target_industry": "Software & AI Technology",
+      "work_style": "Fully Remote / Distributed teams",
+      "learning_time": "6 - 10 hours per week (Consistent sprint)",
+      "aspirations": "Become a recognized AI Solutions Engineer building production AI applications."
+    },
+    {
+      "career_stage": "Early Career (1-3 years)",
+      "career_goals": "Transition into an AI-forward career and land a high-impact engineering role",
+      "user_id": "user_1789999041853_r9rkus",
+      "updated_at": "2026-09-21T13:57:21.911Z",
+      "created_at": "2026-09-21T13:57:21.854Z",
+      "education": "Bachelor’s Degree",
+      "experience": "Built frontend web applications and small dashboard utilities. Familiar with APIs.",
+      "skills": [
+        "JavaScript",
+        "React",
+        "Basic Python",
+        "CSS",
+        "Git"
+      ],
+      "interests": [
+        "Generative AI",
+        "Cloud Infrastructure",
+        "Developer Tools",
+        "Full-Stack Architecture"
+      ],
+      "target_industry": "Software & AI Technology",
+      "work_style": "Fully Remote / Distributed teams",
+      "learning_time": "6 - 10 hours per week (Consistent sprint)",
+      "aspirations": "Become a recognized AI Solutions Engineer building production AI applications."
+    },
+    {
+      "career_stage": "Early Career (1-3 years)",
+      "career_goals": "Transition into an AI-forward career and land a high-impact engineering role",
+      "user_id": "user_1789999142533_ygx6qv",
+      "updated_at": "2026-09-21T13:59:02.582Z",
+      "created_at": "2026-09-21T13:59:02.534Z",
+      "education": "Bachelor’s Degree",
+      "experience": "Built frontend web applications and small dashboard utilities. Familiar with APIs.",
+      "skills": [
+        "JavaScript",
+        "React",
+        "Basic Python",
+        "CSS",
+        "Git"
+      ],
+      "interests": [
+        "Generative AI",
+        "Cloud Infrastructure",
+        "Developer Tools",
+        "Full-Stack Architecture"
+      ],
+      "target_industry": "Software & AI Technology",
+      "work_style": "Fully Remote / Distributed teams",
+      "learning_time": "6 - 10 hours per week (Consistent sprint)",
+      "aspirations": "Become a recognized AI Solutions Engineer building production AI applications."
+    },
+    {
+      "career_stage": "Exploring",
+      "career_goals": "Seeking career clarity and high-growth opportunities",
+      "user_id": "user_1790000840457_l62nol",
+      "updated_at": "2026-09-21T14:36:36.640Z",
+      "created_at": "2026-09-21T14:27:20.463Z",
+      "education": "",
+      "experience": "",
+      "skills": [],
+      "interests": [],
+      "target_industry": "",
+      "work_style": "",
+      "learning_time": "",
+      "aspirations": ""
+    },
+    {
+      "career_stage": "Exploring",
+      "career_goals": "Seeking career clarity and high-growth opportunities",
+      "user_id": "user_1790001535500_abtgec",
+      "updated_at": "2026-09-21T14:38:55.501Z",
+      "created_at": "2026-09-21T14:38:55.501Z"
+    }
+  ],
+  "assessments": [
+    {
+      "user_id": "user_1789998793219_l0q9nh",
+      "answers": {
+        "career_stage": "Early Career (1-3 years)",
+        "education": "Bachelor’s Degree",
+        "current_skills": "JavaScript, React, Basic Python, CSS, Git",
+        "experience_summary": "Built frontend web applications and small dashboard utilities. Familiar with APIs.",
+        "interests": "Generative AI, Cloud Infrastructure, Developer Tools, Full-Stack Architecture",
+        "target_industry": "Software & AI Technology",
+        "career_goals": "Transition into an AI-forward career and land a high-impact engineering role",
+        "confidence_level": "3 - Have some direction, but missing a solid roadmap",
+        "learning_time": "6 - 10 hours per week (Consistent sprint)",
+        "work_style": "Fully Remote / Distributed teams",
+        "frustrations": "Tutorial hell without building real projects",
+        "aspirations": "Become a recognized AI Solutions Engineer building production AI applications."
+      },
+      "completed": true,
+      "updated_at": "2026-09-21T13:53:13.269Z",
+      "created_at": "2026-09-21T13:53:13.269Z"
+    },
+    {
+      "user_id": "user_1789999041853_r9rkus",
+      "answers": {
+        "career_stage": "Early Career (1-3 years)",
+        "education": "Bachelor’s Degree",
+        "current_skills": "JavaScript, React, Basic Python, CSS, Git",
+        "experience_summary": "Built frontend web applications and small dashboard utilities. Familiar with APIs.",
+        "interests": "Generative AI, Cloud Infrastructure, Developer Tools, Full-Stack Architecture",
+        "target_industry": "Software & AI Technology",
+        "career_goals": "Transition into an AI-forward career and land a high-impact engineering role",
+        "confidence_level": "3 - Have some direction, but missing a solid roadmap",
+        "learning_time": "6 - 10 hours per week (Consistent sprint)",
+        "work_style": "Fully Remote / Distributed teams",
+        "frustrations": "Tutorial hell without building real projects",
+        "aspirations": "Become a recognized AI Solutions Engineer building production AI applications."
+      },
+      "completed": true,
+      "updated_at": "2026-09-21T13:57:21.905Z",
+      "created_at": "2026-09-21T13:57:21.905Z"
+    },
+    {
+      "user_id": "user_1789999142533_ygx6qv",
+      "answers": {
+        "career_stage": "Early Career (1-3 years)",
+        "education": "Bachelor’s Degree",
+        "current_skills": "JavaScript, React, Basic Python, CSS, Git",
+        "experience_summary": "Built frontend web applications and small dashboard utilities. Familiar with APIs.",
+        "interests": "Generative AI, Cloud Infrastructure, Developer Tools, Full-Stack Architecture",
+        "target_industry": "Software & AI Technology",
+        "career_goals": "Transition into an AI-forward career and land a high-impact engineering role",
+        "confidence_level": "3 - Have some direction, but missing a solid roadmap",
+        "learning_time": "6 - 10 hours per week (Consistent sprint)",
+        "work_style": "Fully Remote / Distributed teams",
+        "frustrations": "Tutorial hell without building real projects",
+        "aspirations": "Become a recognized AI Solutions Engineer building production AI applications."
+      },
+      "completed": true,
+      "updated_at": "2026-09-21T13:59:02.580Z",
+      "created_at": "2026-09-21T13:59:02.580Z"
+    }
+  ],
+  "career_dna": [
+    {
+      "career_direction": "AI Solutions Engineering",
+      "goals": [
+        "Transition from Frontend to Full-Stack AI Engineering",
+        "Build production-grade Generative AI applications"
+      ],
+      "skills": [
+        "JavaScript",
+        "React",
+        "Basic Python",
+        "CSS",
+        "Git"
+      ],
+      "skill_gaps": [
+        "Vector Databases (Pinecone/Weaviate)",
+        "LLM Orchestration",
+        "Cloud Infrastructure (AWS/Vercel AI)"
+      ],
+      "experience": "Early career professional with a focus on frontend dashboards and utility tools.",
+      "interests": [
+        "Generative AI",
+        "Cloud Infrastructure",
+        "Developer Tools"
+      ],
+      "career_stage": "Early Career (1-3 years)",
+      "target_industry": "Software & AI Technology",
+      "learning_preferences": "Project-based learning with a 6-10 hour weekly commitment.",
+      "brand_direction": "AI-Forward Full-Stack Developer",
+      "content_direction": "Building in public: Documenting the transition from UI developer to AI Solutions Engineer.",
+      "professional_goals": "Become a recognized expert in productionizing AI applications.",
+      "user_id": "user_1789999041853_r9rkus",
+      "updated_at": "2026-09-21T13:57:46.915Z",
+      "created_at": "2026-09-21T13:57:46.915Z"
+    },
+    {
+      "career_direction": "Full-Stack AI Solutions Engineer",
+      "goals": [
+        "Transition into an AI-forward career and land a high-impact engineering role",
+        "Build demonstrable public projects"
+      ],
+      "skills": [
+        "JavaScript",
+        "API Integration",
+        "Modern Web Technologies"
+      ],
+      "skill_gaps": [
+        "LLM APIs & Vector Databases",
+        "Cloud Deployment",
+        "Vector Embeddings"
+      ],
+      "experience": "Built frontend web applications and small dashboard utilities. Familiar with APIs.",
+      "interests": [
+        "Software & AI Technology",
+        "Generative AI",
+        "High-Growth Tech"
+      ],
+      "career_stage": "Early Career (1-3 years)",
+      "target_industry": "Software & AI Technology",
+      "learning_preferences": "6 - 10 hours per week (Consistent sprint)",
+      "brand_direction": "Full-Stack AI Solutions Engineer | Modern Builder",
+      "content_direction": "AI tools, project teardowns, and modern technical workflows",
+      "professional_goals": "Become a recognized AI Solutions Engineer building production AI applications.",
+      "user_id": "user_1789999142533_ygx6qv",
+      "updated_at": "2026-09-21T13:59:24.906Z",
+      "created_at": "2026-09-21T13:59:24.906Z"
+    }
+  ],
+  "skill_analysis": [
+    {
+      "strong_skills": [
+        "React.js",
+        "JavaScript (ES6+)",
+        "Git Version Control"
+      ],
+      "developing_skills": [
+        "Python Scripting",
+        "RESTful API Design"
+      ],
+      "missing_skills": [
+        "LangChain/LlamaIndex",
+        "Vector Database Management",
+        "Prompt Engineering & Evaluation"
+      ],
+      "priority_skills": [
+        "Asynchronous Python (FastAPI)",
+        "RAG (Retrieval-Augmented Generation) Architecture",
+        "Cloud Deployment for AI (Vercel/AWS)"
+      ],
+      "recommended_next_skill": "Advanced Python for AI",
+      "next_skill_rationale": "To move beyond 'tutorial hell,' you need to master the backend logic that powers AI agents, specifically moving from basic Python to building robust APIs that handle LLM streams.",
+      "user_id": "user_1789999041853_r9rkus",
+      "updated_at": "2026-09-21T13:57:46.916Z",
+      "created_at": "2026-09-21T13:57:46.916Z"
+    },
+    {
+      "strong_skills": [
+        "Frontend Fundamentals",
+        "Problem Decomposition",
+        "Continuous Learning"
+      ],
+      "developing_skills": [
+        "API Architecture",
+        "Data Persistence",
+        "Prompt Engineering"
+      ],
+      "missing_skills": [
+        "Production AI Pipelines",
+        "Vector Databases",
+        "Performance Profiling"
+      ],
+      "priority_skills": [
+        "LLM APIs & Vector Databases",
+        "LangChain/LlamaIndex",
+        "Cloud Functions",
+        "System Design"
+      ],
+      "recommended_next_skill": "LLM APIs & Vector Databases",
+      "next_skill_rationale": "Mastering this unlocks immediate ability to connect LLMs to real user interfaces.",
+      "user_id": "user_1789999142533_ygx6qv",
+      "updated_at": "2026-09-21T13:59:24.909Z",
+      "created_at": "2026-09-21T13:59:24.909Z"
+    }
+  ],
+  "roadmaps": [
+    {
+      "user_id": "user_1789999041853_r9rkus",
+      "duration": 30,
+      "roadmap_data": [
+        {
+          "id": "task_1",
+          "week": 1,
+          "title": "Python for AI Backend",
+          "description": "Master FastAPI and Pydantic to build high-performance endpoints for AI models.",
+          "skill": "FastAPI",
+          "status": "completed"
+        },
+        {
+          "id": "task_2",
+          "week": 1,
+          "title": "LLM Fundamentals",
+          "description": "Explore OpenAI/Anthropic APIs and experiment with system prompting and token management.",
+          "skill": "Prompt Engineering",
+          "status": "not_started"
+        },
+        {
+          "id": "task_3",
+          "week": 2,
+          "title": "Orchestration Frameworks",
+          "description": "Learn LangChain or LlamaIndex to chain together multiple AI steps and manage memory.",
+          "skill": "LangChain",
+          "status": "not_started"
+        },
+        {
+          "id": "task_4",
+          "week": 3,
+          "title": "Vector Databases",
+          "description": "Implement a vector store like Pinecone or Supabase pgvector for document retrieval.",
+          "skill": "Vector DBs",
+          "status": "not_started"
+        },
+        {
+          "id": "task_5",
+          "week": 4,
+          "title": "Full-Stack AI Deployment",
+          "description": "Deploy a RAG-based application using Vercel AI SDK and AWS/Supabase.",
+          "skill": "Cloud Infrastructure",
+          "status": "not_started"
+        }
+      ],
+      "updated_at": "2026-09-21T13:57:46.982Z",
+      "created_at": "2026-09-21T13:57:46.918Z"
+    },
+    {
+      "user_id": "user_1789999142533_ygx6qv",
+      "duration": 30,
+      "roadmap_data": [
+        {
+          "id": "task_1",
+          "week": 1,
+          "title": "Foundations of LLM APIs & Vector Databases",
+          "description": "Study core API endpoints, rate limiting, and structured JSON parsing with modern SDKs.",
+          "skill": "LLM APIs & Vector Databases",
+          "status": "completed"
+        },
+        {
+          "id": "task_2",
+          "week": 1,
+          "title": "Environment & Token Setup",
+          "description": "Configure secure server-side environment variables and token management.",
+          "skill": "Security & Backend",
+          "status": "not_started"
+        },
+        {
+          "id": "task_3",
+          "week": 2,
+          "title": "Practical Mini-Service Implementation",
+          "description": "Build a standalone script that handles user prompts, validates schemas, and returns structured data.",
+          "skill": "Applied AI",
+          "status": "not_started"
+        },
+        {
+          "id": "task_4",
+          "week": 3,
+          "title": "Capstone Project Architecture",
+          "description": "Scaffold the full-stack interface and connect dynamic state to your AI backend service.",
+          "skill": "Full-Stack Architecture",
+          "status": "not_started"
+        },
+        {
+          "id": "task_5",
+          "week": 4,
+          "title": "Portfolio Showcase & LinkedIn Launch",
+          "description": "Document your project architecture, capture demo walk-throughs, and publish your case study on LinkedIn.",
+          "skill": "Personal Branding",
+          "status": "not_started"
+        }
+      ],
+      "updated_at": "2026-09-21T13:59:24.983Z",
+      "created_at": "2026-09-21T13:59:24.912Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_1",
+      "title": "Personal Knowledge Brain",
+      "difficulty": "Beginner",
+      "objective": "Build a search tool for your own notes using RAG (Retrieval-Augmented Generation).",
+      "skills": [
+        "Python",
+        "OpenAI API",
+        "Pinecone"
+      ],
+      "tools": [
+        "FastAPI",
+        "React",
+        "LangChain"
+      ],
+      "steps": [
+        "Create a script to chunk and embed local markdown files.",
+        "Upload embeddings to a Pinecone index.",
+        "Build a React frontend to query the index and return AI-summarized answers."
+      ],
+      "expected_outcome": "A functional tool that answers questions based on personal documents.",
+      "portfolio_description": "A full-stack RAG application that uses semantic search to query private datasets.",
+      "linkedin_content_idea": "Video demo: How I turned 2 years of messy notes into a searchable AI brain using LangChain.",
+      "career_relevance": "Demonstrates core AI Solutions Engineering skills: embedding, retrieval, and UI integration.",
+      "status": "in_progress",
+      "user_id": "user_1789999041853_r9rkus",
+      "created_at": "2026-09-21T13:57:46.921Z",
+      "updated_at": "2026-09-21T13:57:47.031Z"
+    },
+    {
+      "id": "proj_2",
+      "title": "AI-Driven DevTool Dashboard",
+      "difficulty": "Intermediate",
+      "objective": "Create a developer dashboard that automates code reviews or documentation generation.",
+      "skills": [
+        "React",
+        "Node.js/Python",
+        "GitHub API"
+      ],
+      "tools": [
+        "Vercel AI SDK",
+        "Anthropic Claude API",
+        "Docker"
+      ],
+      "steps": [
+        "Integrate with GitHub API to fetch recent pull requests.",
+        "Use an LLM to analyze code changes and suggest improvements.",
+        "Build a real-time streaming UI in React to show the AI's thought process."
+      ],
+      "expected_outcome": "A production-ready dashboard for engineering teams.",
+      "portfolio_description": "An AI agent that performs automated code audits and generates documentation on the fly.",
+      "linkedin_content_idea": "Article: Why the next generation of DevTools will be built with streaming AI interfaces.",
+      "career_relevance": "Shows ability to build tools for other developers, a key trait for high-impact engineering roles.",
+      "status": "not_started",
+      "user_id": "user_1789999041853_r9rkus",
+      "created_at": "2026-09-21T13:57:46.921Z",
+      "updated_at": "2026-09-21T13:57:46.921Z"
+    },
+    {
+      "id": "proj_1",
+      "title": "AI Content & Workflow Copilot",
+      "difficulty": "Beginner",
+      "objective": "Build an end-to-end intelligent assistant that synthesizes domain prompts into structured actions.",
+      "skills": [
+        "AI APIs",
+        "Prompt Optimization",
+        "State Management"
+      ],
+      "tools": [
+        "Gemini API",
+        "Node.js",
+        "React"
+      ],
+      "steps": [
+        "Design prompt template with schema enforcement",
+        "Implement server-side route with authentication",
+        "Connect modern responsive frontend with live state",
+        "Deploy and record a 60-second video demo"
+      ],
+      "expected_outcome": "A working full-stack SaaS application ready for public demonstration.",
+      "portfolio_description": "Architected and deployed an AI copilot featuring real-time schema generation and responsive UI.",
+      "linkedin_content_idea": "How I built an AI workflow copilot in 14 days and what I learned about structured prompting.",
+      "career_relevance": "Demonstrates modern full-stack AI engineering beyond simple wrappers.",
+      "status": "in_progress",
+      "user_id": "user_1789999142533_ygx6qv",
+      "created_at": "2026-09-21T13:59:24.914Z",
+      "updated_at": "2026-09-21T13:59:25.039Z"
+    },
+    {
+      "id": "proj_2",
+      "title": "Semantic Document Intelligence Engine",
+      "difficulty": "Intermediate",
+      "objective": "Ingest unstructured documentation and allow users to query it with grounded contextual citations.",
+      "skills": [
+        "RAG",
+        "Vector Embeddings",
+        "Full-Stack"
+      ],
+      "tools": [
+        "Node.js",
+        "Vector DB",
+        "Modern UI"
+      ],
+      "steps": [
+        "Chunk and vectorize documentation into embeddings",
+        "Perform cosine similarity matching on queries",
+        "Inject context into model prompts",
+        "Render citations in web dashboard"
+      ],
+      "expected_outcome": "A production-grade semantic search tool demonstrating real retrieval-augmented generation.",
+      "portfolio_description": "Designed a contextual document query engine with source attribution and low latency.",
+      "linkedin_content_idea": "Why naive prompting fails for enterprise docs and how retrieval systems solve hallucinations.",
+      "career_relevance": "Essential knowledge for modern AI engineering and product roles.",
+      "status": "not_started",
+      "user_id": "user_1789999142533_ygx6qv",
+      "created_at": "2026-09-21T13:59:24.914Z",
+      "updated_at": "2026-09-21T13:59:24.914Z"
+    }
+  ],
+  "brand_analysis": [
+    {
+      "current_positioning": "Early-career Frontend Developer with basic Python knowledge.",
+      "target_positioning": "AI Solutions Engineer specializing in production-grade Generative AI applications.",
+      "gaps": [
+        "Lack of public AI-specific projects",
+        "Minimal presence in AI engineering communities",
+        "Resume currently emphasizes UI over system logic"
+      ],
+      "recommendations": [
+        "Pivot portfolio to lead with AI-integrated projects.",
+        "Start a 'Build in Public' series on LinkedIn or X (Twitter).",
+        "Contribute small fixes to open-source AI tools like LangChain.",
+        "Highlight 'AI Orchestration' as a key skill above 'CSS'."
+      ],
+      "user_id": "user_1789999041853_r9rkus",
+      "updated_at": "2026-09-21T13:57:46.923Z",
+      "created_at": "2026-09-21T13:57:46.923Z"
+    },
+    {
+      "current_positioning": "Generalist with foundational skills looking for direction",
+      "target_positioning": "Full-Stack AI Solutions Engineer known for delivering tangible, AI-augmented products",
+      "gaps": [
+        "Generic resume and LinkedIn summary lacking a clear AI specialization",
+        "Absence of demonstrable, live-deployed portfolio projects",
+        "Infrequent public sharing of technical learnings and insights"
+      ],
+      "recommendations": [
+        "Update LinkedIn headline to highlight your target direction and primary stack",
+        "Publish a case study of your first portfolio project with a video demo",
+        "Write 2 short technical takeaways per week sharing lessons learned while building",
+        "Engage meaningfully with builders and hiring managers in your target domain"
+      ],
+      "user_id": "user_1789999142533_ygx6qv",
+      "updated_at": "2026-09-21T13:59:24.918Z",
+      "created_at": "2026-09-21T13:59:24.918Z"
+    }
+  ],
+  "linkedin_guidance": [
+    {
+      "headline": "Full-Stack Engineer | Building Production AI Applications | React & Python (FastAPI)",
+      "about": "I am a software engineer focused on the intersection of user experience and Generative AI. With a background in frontend architecture and a deep interest in AI orchestration, I build applications that make complex LLMs accessible and useful for end-users. Currently exploring RAG architectures and autonomous agents.",
+      "positioning": "A technical builder who understands both the 'how' of AI and the 'why' of user experience.",
+      "content_topics": [
+        "Lessons learned moving from React to AI Orchestration",
+        "The challenges of deploying RAG in production",
+        "Reviewing new developer tools in the AI ecosystem"
+      ],
+      "user_id": "user_1789999041853_r9rkus",
+      "updated_at": "2026-09-21T13:57:46.925Z",
+      "created_at": "2026-09-21T13:57:46.925Z"
+    },
+    {
+      "headline": "Full-Stack AI Solutions Engineer | Building Intelligent Web Systems & AI Workflows",
+      "about": "I specialize in building intelligent, scalable digital solutions that bridge modern engineering with applied AI. Passionate about transforming complex workflows into clean, human-centered software.\n\nCurrently focused on full-stack architecture, structured AI APIs, and high-impact digital products. Always learning, building, and sharing insights along the journey.",
+      "positioning": "Full-Stack AI Solutions Engineer combining foundational technical execution with modern AI capabilities.",
+      "content_topics": [
+        "Lessons learned from building and deploying my first full-stack AI project",
+        "Why structured JSON prompting is essential for production AI applications",
+        "My 30-day sprint roadmap to transitioning into modern AI engineering",
+        "Breakdown of top tools and libraries shaping the next generation of software"
+      ],
+      "user_id": "user_1789999142533_ygx6qv",
+      "updated_at": "2026-09-21T13:59:24.921Z",
+      "created_at": "2026-09-21T13:59:24.921Z"
+    }
+  ],
+  "chat_conversations": [
+    {
+      "user_id": "user_1789999041853_r9rkus",
+      "messages": [
+        {
+          "id": "msg_lsbrbhw3b",
+          "role": "user",
+          "message": "What should I do next?",
+          "created_at": "2026-09-21T13:57:47.070Z"
+        }
+      ],
+      "created_at": "2026-09-21T13:57:47.070Z",
+      "updated_at": "2026-09-21T13:57:47.070Z"
+    },
+    {
+      "user_id": "user_1789999142533_ygx6qv",
+      "messages": [
+        {
+          "id": "msg_cof3fl9pd",
+          "role": "user",
+          "message": "What should I do next?",
+          "created_at": "2026-09-21T13:59:25.086Z"
+        },
+        {
+          "id": "msg_hnss4pem7",
+          "role": "assistant",
+          "message": "Based on your current career direction (Full-Stack AI Solutions Engineer) and priority skill (LLM APIs & Vector Databases), your immediate next best action is to focus on your current sprint task: Environment & Token Setup (Week 1): Configure secure server-side environment variables and token management.. Dedicating even 30-45 minutes today to this task will build demonstrable momentum toward your portfolio project!",
+          "created_at": "2026-09-21T13:59:46.603Z"
+        }
+      ],
+      "created_at": "2026-09-21T13:59:25.086Z",
+      "updated_at": "2026-09-21T13:59:46.603Z"
+    },
+    {
+      "user_id": "user_1790000840457_l62nol",
+      "messages": [
+        {
+          "id": "msg_q9qr3075c",
+          "role": "user",
+          "message": "I only have 5 hours this week. What should I focus on?",
+          "created_at": "2026-09-21T14:37:07.252Z"
+        },
+        {
+          "id": "msg_g5hw2bjs1",
+          "role": "assistant",
+          "message": "Based on your current career direction (Seeking career clarity and high-growth opportunities) and priority skill (Core Technical Foundations), your immediate next best action is to focus on your current sprint task: Week 1 foundational learning. Dedicating even 30-45 minutes today to this task will build demonstrable momentum toward your portfolio project!",
+          "created_at": "2026-09-21T14:37:37.007Z"
+        }
+      ],
+      "created_at": "2026-09-21T14:37:07.252Z",
+      "updated_at": "2026-09-21T14:37:37.007Z"
+    },
+    {
+      "user_id": "user_1790001535500_abtgec",
+      "messages": [
+        {
+          "id": "msg_fh50nirqj",
+          "role": "user",
+          "message": "hi",
+          "created_at": "2026-09-21T14:41:09.197Z"
+        },
+        {
+          "id": "msg_kl27rsset",
+          "role": "assistant",
+          "message": "Hello! Great to connect. As your career coach, my goal is to make sure you always know your best next move.\n\nRight now, your path is set toward **seeking career clarity and high-growth opportunities**, with your roadmap primed for **Week 1 foundational learning**. Because your profile is still fresh, our immediate priority is sharpening that focus so we can build a concrete, step-by-step game plan.\n\nTo figure out **what you should do next**, tell me: **Where are we starting from today?**\n\n1. **Exploring options**: You have a general interest (e.g., tech, data, AI, product, engineering) but want help picking the highest-leverage role.\n2. **Target in mind**: You already know the role you want to break into, and we need to map your exact skill gaps and projects.\n3. **Reviewing your background**: You’d like to share your current background or resume highlights so we can build your Career DNA profile.\n\nLet me know which sounds like the best starting point, or tell me what's on your mind!",
+          "created_at": "2026-09-21T14:41:36.496Z"
+        },
+        {
+          "id": "msg_ep5je8n3h",
+          "role": "user",
+          "message": "I only have 5 hours this week. What should I focus on?",
+          "created_at": "2026-09-21T14:41:49.264Z"
+        },
+        {
+          "id": "msg_tc1q36ksu",
+          "role": "assistant",
+          "message": "Based on your current career direction (Seeking career clarity and high-growth opportunities) and priority skill (Core Technical Foundations), your immediate next best action is to focus on your current sprint task: Week 1 foundational learning. Dedicating even 30-45 minutes today to this task will build demonstrable momentum toward your portfolio project!",
+          "created_at": "2026-09-21T14:42:10.815Z"
+        }
+      ],
+      "created_at": "2026-09-21T14:41:09.197Z",
+      "updated_at": "2026-09-21T14:42:10.815Z"
+    }
+  ]
+}
