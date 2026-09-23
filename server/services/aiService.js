@@ -2,8 +2,12 @@ const MODELS = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash'];
 
 async function callGemini(contents, options = {}) {
   const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) {
-    throw new Error('GEMINI_API_KEY is not configured in server environment.');
+  // A real Google Gemini key is ~39 chars and starts with "AIza". Reject
+  // missing keys and obvious placeholders instead of firing a doomed request.
+  if (!apiKey || apiKey.length < 20) {
+    const e = new Error('GEMINI_API_KEY is missing or invalid. Provide a real Google Gemini API key (starts with "AIza", ~39 characters) in your Vercel project environment variables.');
+    e.code = 'INVALID_API_KEY';
+    throw e;
   }
 
   const { json = true, systemInstruction = null, temperature = 0.4 } = options;
@@ -36,9 +40,21 @@ async function callGemini(contents, options = {}) {
 
       if (!res.ok) {
         const errorText = await res.text();
-        console.warn(`[Gemini API] Notice for ${model} (Status ${res.status})`);
+        console.warn(`[Gemini API] ${model} HTTP ${res.status}: ${errorText.substring(0, 180)}`);
+        // Auth failures are not model-specific — fail fast with a clear cause
+        // instead of silently masking them behind fabricated fallback content.
+        if (res.status === 400 && /API_?KEY_?INVALID|API key not valid/i.test(errorText)) {
+          const e = new Error('GEMINI_API_KEY was rejected by Google (API_KEY_INVALID). Set a valid key in your Vercel environment variables.');
+          e.code = 'INVALID_API_KEY';
+          throw e;
+        }
+        if (res.status === 401 || res.status === 403) {
+          const e = new Error(`GEMINI_API_KEY unauthorized (HTTP ${res.status}). Verify the key and that the Generative Language API is enabled for it.`);
+          e.code = 'INVALID_API_KEY';
+          throw e;
+        }
         lastError = new Error(`Gemini HTTP ${res.status}: ${errorText.substring(0, 150)}`);
-        continue; // Try next model in pool
+        continue; // Transient/model-specific issue — try next model in pool
       }
 
       const data = await res.json();
@@ -58,6 +74,7 @@ async function callGemini(contents, options = {}) {
 
       return text;
     } catch (err) {
+      if (err.code === 'INVALID_API_KEY') throw err; // don't retry a bad key
       lastError = err;
       console.warn(`[Gemini API] Model ${model} error:`, err.message);
     }
@@ -365,7 +382,10 @@ Respond ONLY with valid JSON matching this exact schema:
       }
       throw new Error("Malformed plan returned from Gemini");
     } catch (err) {
-      console.warn('[AIService] Gemini call encountered issue, deploying resilient contextual fallback:', err.message);
+      // A misconfigured key must surface as a real error, never as a generic
+      // template that looks personalized but isn't.
+      if (err.code === 'INVALID_API_KEY') throw err;
+      console.warn('[AIService] Transient Gemini issue, using contextual fallback:', err.message);
       return generateDeterministicFallback(answers, profile);
     }
   },
@@ -478,8 +498,10 @@ USER SAVED CAREER CONTEXT:
         temperature: 0.6
       });
     } catch (err) {
-      console.warn('[AIService] Gemini coach error, providing grounded response:', err.message);
-      return `Based on your current career direction (${careerContext.careerDirection}) and priority skill (${careerContext.nextSkill}), your immediate next best action is to focus on your current sprint task: ${careerContext.currentRoadmapTask}. Dedicating even 30-45 minutes today to this task will build demonstrable momentum toward your portfolio project!`;
+      // Never return a canned string here — that produced the "same answer to
+      // every question" symptom. Surface the real failure to the route.
+      console.error('[AIService] Gemini coach call failed:', err.message);
+      throw err;
     }
   }
 };

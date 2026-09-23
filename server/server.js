@@ -4,7 +4,7 @@ require('dotenv').config({ path: path.join(__dirname, '.env') });
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
-const { connectDB } = require('./db/connection');
+const { connectDB, getIsMongoConnected } = require('./db/connection');
 
 // Import route modules
 const authRoutes = require('./routes/authRoutes');
@@ -55,8 +55,19 @@ app.use(async (req, res, next) => {
   try {
     await ensureDB();
   } catch (err) {
-    console.warn('[Database] ensureDB warning:', err.message);
+    console.error('[Database] ensureDB error:', err.message);
   }
+
+  // The local JSON file store cannot persist across Vercel serverless
+  // invocations (read-only, ephemeral filesystem), so silently using it in
+  // production produces "user not found" right after registration. Surface a
+  // clear error instead of pretending the request succeeded.
+  if (process.env.VERCEL && !getIsMongoConnected() && req.path.startsWith('/api') && req.path !== '/api/health') {
+    return res.status(503).json({
+      error: 'The database is currently unavailable. Please verify MONGODB_URI (it must include the user password and a database name) and that "Allow access from anywhere" (0.0.0.0/0) is enabled in MongoDB Atlas Network Access.'
+    });
+  }
+
   next();
 });
 

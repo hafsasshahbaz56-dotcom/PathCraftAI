@@ -90,6 +90,9 @@ router.post('/chat', requireAuth, async (req, res) => {
     });
   } catch (err) {
     console.error('AI Coach error:', err);
+    if (err.code === 'INVALID_API_KEY') {
+      return res.status(502).json({ error: `AI Coach is not configured correctly. ${err.message}` });
+    }
     res.status(500).json({
       error: "We couldn't reach your AI Career Coach right now. Please try again in a moment."
     });

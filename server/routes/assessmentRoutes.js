@@ -206,6 +206,9 @@ router.post('/submit', requireAuth, async (req, res) => {
     });
   } catch (err) {
     console.error('Assessment orchestration error:', err);
+    if (err.code === 'INVALID_API_KEY') {
+      return res.status(502).json({ error: `Your career plan could not be generated because the AI is not configured correctly. ${err.message}` });
+    }
     res.status(500).json({
       error: 'We could not generate your career plan right now. Please try again in a moment.'
     });
