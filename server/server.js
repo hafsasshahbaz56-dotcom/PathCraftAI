@@ -40,6 +40,26 @@ if (process.env.NODE_ENV !== 'production') {
   });
 }
 
+// Ensure the database connection is established before handling requests.
+// On serverless (Vercel) the module is reused across invocations, so the
+// connection promise is cached and only created once per warm instance.
+let dbConnectionPromise = null;
+const ensureDB = () => {
+  if (!dbConnectionPromise) {
+    dbConnectionPromise = connectDB();
+  }
+  return dbConnectionPromise;
+};
+
+app.use(async (req, res, next) => {
+  try {
+    await ensureDB();
+  } catch (err) {
+    console.warn('[Database] ensureDB warning:', err.message);
+  }
+  next();
+});
+
 // Health check endpoint
 app.get('/api/health', (req, res) => {
   res.json({
@@ -61,7 +81,9 @@ app.use('/api/brand', brandRoutes);
 app.use('/api/coach', coachRoutes);
 app.use('/api/dashboard', dashboardRoutes);
 
-// Serve static frontend build if in production
+// Serve static frontend build when running as a standalone server (local/prod
+// node process). On Vercel the static client is served by the CDN and only
+// /api/* requests reach this function, so these handlers are simply unused.
 const clientDistPath = path.join(__dirname, '..', 'client', 'dist');
 app.use(express.static(clientDistPath));
 
@@ -94,16 +116,19 @@ app.use((err, req, res, next) => {
   });
 });
 
-// Start Server
-async function startServer() {
-  await connectDB();
-  app.listen(PORT, () => {
-    console.log(`====================================================`);
-    console.log(` AI Career Growth Platform API Running on Port ${PORT}`);
-    console.log(` Base URL: http://localhost:${PORT}`);
-    console.log(` Health: http://localhost:${PORT}/api/health`);
-    console.log(`====================================================`);
+// Start a real HTTP listener only when this file is run directly
+// (e.g. `node server/server.js`). When imported by the Vercel serverless
+// entry (api/index.js), the app is exported and invoked per request instead.
+if (require.main === module) {
+  ensureDB().finally(() => {
+    app.listen(PORT, () => {
+      console.log(`====================================================`);
+      console.log(` AI Career Growth Platform API Running on Port ${PORT}`);
+      console.log(` Base URL: http://localhost:${PORT}`);
+      console.log(` Health: http://localhost:${PORT}/api/health`);
+      console.log(`====================================================`);
+    });
   });
 }
 
-startServer();
+module.exports = app;
