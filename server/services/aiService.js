@@ -1,4 +1,4 @@
-const MODELS = ['gemini-3-flash-preview', 'gemini-3.6-flash', 'gemini-3.8-flash'];
+const MODELS = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash'];
 
 async function callGemini(contents, options = {}) {
   const apiKey = process.env.GEMINI_API_KEY;
